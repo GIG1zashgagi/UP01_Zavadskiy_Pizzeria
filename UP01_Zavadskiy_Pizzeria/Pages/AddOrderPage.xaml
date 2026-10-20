@@ -1,0 +1,48 @@
+﻿<Page x:Class="UP01_Zavadskiy_Pizzeria.Pages.AddOrderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Заказ">
+    <Grid Background="#F3F3F3" Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Клиент" Margin="10" FontSize="16"/>
+        <ComboBox Grid.Row="0" Grid.Column="1" x:Name="CBCustomer" Margin="10"
+                  DisplayMemberPath="first_name" SelectedValuePath="customer_id" SelectedValue="{Binding customer_id}"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Пиццерия" Margin="10" FontSize="16"/>
+        <ComboBox Grid.Row="1" Grid.Column="1" x:Name="CBPizzeria" Margin="10"
+                  DisplayMemberPath="name" SelectedValuePath="pizzeria_id" SelectedValue="{Binding pizzeria_id}"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Тип заказа" Margin="10" FontSize="16"/>
+        <ComboBox Grid.Row="2" Grid.Column="1" x:Name="CBType" Margin="10"
+                  DisplayMemberPath="name" SelectedValuePath="order_type_id" SelectedValue="{Binding order_type_id}"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Статус" Margin="10" FontSize="16"/>
+        <ComboBox Grid.Row="3" Grid.Column="1" x:Name="CBStatus" Margin="10"
+                  DisplayMemberPath="name" SelectedValuePath="status_id" SelectedValue="{Binding status_id}"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Сумма" Margin="10" FontSize="16"/>
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="TBFinal" Margin="10" Text="{Binding final_amount}"/>
+
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Комментарий" Margin="10" FontSize="16"/>
+        <TextBox Grid.Row="5" Grid.Column="1" x:Name="TBComment" Margin="10" Text="{Binding comment}" Height="60"
+                 TextWrapping="Wrap" AcceptsReturn="True"/>
+
+        <StackPanel Grid.Row="6" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20">
+            <Button Content="Сохранить" Click="ButtonSave_Click"/>
+            <Button Content="Очистить" Click="ButtonClean_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="58b929724dd84e84a3a808c45c51f50e" Name="Diagram1">
+        <EntityTypeShape EntityType="uppizzariaModel.app_users" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.cities" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.customer_addresses" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.customers" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.deliveries" Width="1.5" PointX="9.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.employees" Width="1.5" PointX="5.25" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.ingredients" Width="1.5" PointX="6" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.item_ingredients" Width="1.5" PointX="12.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.menu_categories" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.menu_items" Width="1.5" PointX="7.5" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.order_items" Width="1.5" PointX="9.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.order_statuses" Width="1.5" PointX="5.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.order_types" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.orders" Width="1.5" PointX="7.5" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.payment_methods" Width="1.5" PointX="10.5" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.payments" Width="1.5" PointX="12.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.pizzerias" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.positions" Width="1.5" PointX="3" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="uppizzariaModel.warehouse_stock" Width="1.5" PointX="8.25" PointY="13" IsExpanded="true" />
+        <AssociationConnector Association="uppizzariaModel.fk_addr_city" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_pizzeria_city" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_addr_customer" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_order_address" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_order_customer" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_delivery_courier" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_delivery_order" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_employee_pizzeria" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_employee_position" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_order_employee" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_ii_ingredient" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_stock_ingredient" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_ii_item" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_item_category" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_oi_item" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_oi_order" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_order_status" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_order_type" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_order_pizzeria" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_payment_order" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_payment_method" ManuallyRouted="false" />
+        <AssociationConnector Association="uppizzariaModel.fk_stock_pizzeria" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
